@@ -1,0 +1,17 @@
+{
+    "name": "BBC Web Inspector",
+    "version": "0.1",
+    "description": "Inspect a BBC web page",
+    "devtools_page": "devtools.html",
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "permissions": [
+        "tabs", 
+        "http://*/*",
+        "https://*/*"
+    ],
+    "manifest_version": 2
+}

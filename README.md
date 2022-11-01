@@ -1,4 +1,9 @@
+![bbc-web-inspector logo](https://raw.githubusercontent.com/alicraigmile/bbc-web-inspector/main/detective128.png)
+
 Inspect BBC web
+==
+
+Discvover some useful evidence about how BBC web pages are rendered.
 
 Installation
 ===

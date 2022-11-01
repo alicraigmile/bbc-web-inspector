@@ -60,7 +60,7 @@ chrome.devtools.network.onNavigated.addListener(function(url) {
             headers2[header.name] = header.value;    
         });
 
-        ['req-svc-chain', 'via', 'bid', 'x-bbc-edge-cache-status', 'belfrage-cache-status', 'moz-cache-status', 'server', 'content-return-type'].forEach(header => {
+        ['req-svc-chain', 'via', 'server', 'x-bbc-edge-cache-status', 'belfrage-cache-status', 'bid', 'moz-cache-status', 'content-return-type'].forEach(header => {
             //chrome.devtools.inspectedWindow.eval('console.log(unescape("' + escape(header) + '") + ": " + unescape("' + escape(headers2[header]) + '"))');
 		var cl= '';
 		if (headers2[header] == 'STALE') {
@@ -71,6 +71,9 @@ chrome.devtools.network.onNavigated.addListener(function(url) {
 		}
 		if (headers2[header] == 'MISS') {
 			cl='miss'
+		}
+		if (headers2[header] == 'REVALIDATED') {
+			cl='revalidated'
 		}
 		if (headers2[header] == 'HIT') {
 			cl='hit'

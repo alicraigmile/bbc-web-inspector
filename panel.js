@@ -2,7 +2,7 @@
 //
 // Can use
 // chrome.devtools.*
-// chrome.extension.*
+// chrome.runtime.*
 
 /*
 document.querySelector('#executescript').addEventListener('click', function() {

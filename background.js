@@ -5,7 +5,7 @@
 // chrome.tabs.*
 // chrome.extension.*
 
-chrome.extension.onConnect.addListener(function (port) {
+chrome.runtime.onConnect.addListener(function (port) {
 
     var extensionListener = function (message, sender, sendResponse) {
 
@@ -33,10 +33,10 @@ chrome.extension.onConnect.addListener(function (port) {
     }
 
     // Listens to messages sent from the panel
-    chrome.extension.onMessage.addListener(extensionListener);
+    chrome.runtime.onMessage.addListener(extensionListener);
 
     port.onDisconnect.addListener(function(port) {
-        chrome.extension.onMessage.removeListener(extensionListener);
+        chrome.runtime.onMessage.removeListener(extensionListener);
     });
 
     // port.onMessage.addListener(function (message) {

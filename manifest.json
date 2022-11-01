@@ -1,6 +1,6 @@
 {
     "name": "BBC Web Inspector",
-    "version": "0.1",
+    "version": "1.0",
     "description": "Inspect a BBC web page",
     "devtools_page": "devtools.html",
     "icons": {

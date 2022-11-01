@@ -16,7 +16,7 @@ Installation
 Usage
 ===
 
-While on any bpage, launch the devtools, you should see a new tab called 'Inspect BBC web'.
+While on any page, launch the devtools, you should see a new tab called 'Inspect BBC web'.
 
 Please visit  a BBC web page (*.bbc.com/* *.bbc.co.uk/*) and the panel will update with findings about the page.
 

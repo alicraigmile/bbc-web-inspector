@@ -3,20 +3,28 @@
 <head>
 	<meta charset="UTF-8">
 	<style>
-		#headers div { margin: 4px 0; padding: 4px; background: lightgray; }
-		
-		.test::before { content: "🧪 " }
-		.miss::before { content: "❌ " }
-		.hit::before { content: "✅ " }
 		.expired::before { content: "⚰️ " }
-		.stale:before { content: "🧀 " }
-		.live::before { content: "⚡️ " }
+		#headers div {
+ 			background: lightgray;
+			margin: 4px 0; 
+			padding: 4px;
+		}
+		.hit::before { content: "✅ " }
 		.key::after { content: ": " }
-		.key {font-weight: bold; display: inline-block; width: 15em;  }
+		.key {
+			display: inline-block;
+			font-weight: bold;
+			width: 15em;
+		}
+		.live::before { content: "⚡️ " }
+		#logo { height: 64px }
+		.miss::before { content: "❌ " }
+		.stale:before { content: "🧀 " }
+		.test::before { content: "🧪 " }
 	</style>
 </head>
 <body>
-	<img src="detective.png" height="64" />
+	<img id="logo" src="detective.png" />
 	<h1>Inspect BBC web</h1>
 		<div id="headers">
 		<div>I'm ready!</div>
